@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background: #1a1a1a;
+    color: #fff;
+    overflow-x: hidden;
+}
+.pixel-font {
+    font-family: 'Press Start 2P', cursive;
+}
+header {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQYV2NkYGD4z8DAwMgABXAGiQFGEH8o+ncwMDAwAACuBwc2QJ0gmwAAAABJRU5ErkJggg==') repeat;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff00ff;
+}
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #00ffff;
+    text-shadow: 2px 2px #ff00ff;
+}
+header p {
+    font-size: 1em;
+    color: #ffff00;
+}
+section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.level {
+    background: #2a2a2a;
+    border: 3px solid #00ff00;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff00;
+}
+.level h2 {
+    color: #ff00ff;
+    margin-top: 0;
+}
+.project-card {
+    background: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ffff00;
+    transition: transform 0.2s;
+}
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffff00;
+}
+.tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    gap: 5px;
+    margin: 20px auto;
+    width: 165px;
+}
+.cell {
+    width: 50px;
+    height: 50px;
+    background: #444;
+    border: 2px solid #00ffff;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.cell:hover {
+    background: #555;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    border-top: 5px solid #00ffff;
+}
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,82 @@
+/* Ensure no horizontal scrollbar */
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* General container styles for all sprites */
+.sprite-container {
+  width: 128px; /* Scaled up from 32px (4x) */
+  height: 128px; /* Scaled up from 32px (4x) */
+  position: absolute;
+  bottom: 20px; /* Position near the bottom */
+  left: 20px; /* Position near the left */
+  z-index: 10; /* Ensure sprite appears above other elements */
+  overflow: visible;
+}
+
+/* Mouse sprite */
+.mouse-container {
+  /* No movement animation, just positioned in bottom-left */
+}
+
+.mouse-sprite {
+  width: 128px;
+  height: 128px;
+  background: url('RetroCatsFree.png') 0 0 no-repeat;
+  background-size: 512px 128px; /* 4 frames * 128px (scaled up) */
+  animation: mouse-animation 0.8s steps(4) infinite;
+}
+
+@keyframes mouse-animation {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -512px 0; /* 4 frames * 128px */
+  }
+}
+
+/* Sitting cat sprite */
+.cat-sitting-container {
+  /* No movement animation */
+}
+
+.cat-sitting-sprite {
+  width: 128px;
+  height: 128px;
+  background: url('RetroCatspleaz.png') 0 0 no-repeat;
+  background-size: 512px 128px; /* 4 frames * 128px */
+  animation: cat-sitting-animation 0.8s steps(4) infinite;
+}
+
+@keyframes cat-sitting-animation {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -512px 0;
+  }
+}
+
+/* White cat sprite */
+.white-cat-container {
+  /* No movement animation */
+}
+
+.white-cat-sprite {
+  width: 128px;
+  height: 128px;
+  background: url('RetroCatswow.png') 0 0 no-repeat;
+  background-size: 256px 128px; /* 2 frames * 128px */
+  animation: white-cat-animation 0.4s steps(2) infinite;
+}
+
+@keyframes white-cat-animation {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -256px 0;
+  }
+}

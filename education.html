@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet">
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            background: url('img2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            min-height: 100%;
+            position: relative;
+        }
+        .header {
+            height: 600px;
+            position: relative;
+            font-family: 'Press Start 2P', cursive;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 2em;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(2, 19, 22, 0.7);
+            color: #00ffff;
+        }
+        p {
+            font-size: 0.8em;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff00ff;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #000;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #00ffff;
+        }
+        .header h1 {
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .header p {
+            max-width: 600px;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #ff00ff;
+            transform: translateX(-50%);
+        }
+        .event {
+            position: relative;
+            width: 45%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: width 0.3s ease-in-out, transform 0.3s ease-in-out, left 0.3s ease-in-out, margin 0.3s ease-in-out;
+        }
+        .event:nth-child(odd) {
+            left: 0;
+            margin-right: 55%;
+        }
+        .event:nth-child(even) {
+            left: 55%;
+            margin-left: 0;
+        }
+        .event:hover {
+            width: 50%;
+            transform: scale(1.1);
+        }
+        .event:nth-child(odd):hover {
+            margin-right: 50%;
+        }
+        .event:nth-child(even):hover {
+            left: 50%;
+        }
+        .event::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 30px;
+            height: 30px;
+            background: url('images/arrow-right.png') no-repeat center center;
+            background-size: contain;
+            transform: scale(0.91);
+            transition: transform 0.3s ease-in-out, right 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+        .event:hover::after {
+            transform: scale(0.91);
+        }
+        .event:nth-child(odd)::after {
+            right: -15px;
+        }
+        .event:nth-child(odd):hover::after {
+            right: -20px;
+        }
+        .event:nth-child(even)::after {
+            left: -20px;
+            transform: scale(0.91) rotate(180deg);
+        }
+        .event:nth-child(even):hover::after {
+            left: -20px;
+            transform: scale(0.91) rotate(180deg);
+        }
+        .event h2 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.2em;
+            color: #32ec0d;
+            margin-bottom: 10px;
+            opacity: 1;
+        }
+        .event p {
+            font-size: 1em;
+            color: #b5e03e;
+            opacity: 1;
+        }
+        .button-container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="anim.css">
+</head>
+<body>
+    <!-- Sitting cat sprite -->
+    <div class="sprite-container cat-sitting-container">
+        <div class="cat-sitting-sprite"></div>
+    </div>
+    <div class="header">
+        <h1>My Education Journey</h1>
+        <p>Explore my academic background and the skills I've gained along the way.</p>
+    </div>
+    <div class="timeline">
+        <div class="event">
+            <h2>High School - [School Name] (2019)</h2>
+            <p>Completed my secondary education with a focus on science and mathematics, preparing for a future in technology.</p>
+        </div>
+        <div class="event">
+            <h2>Started BScIT - [University Name] (2022)</h2>
+            <p>Began my Bachelor's degree in Information Technology, diving into programming, web development, and AI concepts.</p>
+        </div>
+        <div class="event">
+            <h2>Diploma in IT - [Institute Name] (2022)</h2>
+            <p>Studied foundational IT concepts, including programming, web development, and database systems, laying the groundwork for my BScIT.</p>
+        </div>
+        <div class="event">
+            <h2>BScIT - [University Name] (2025)</h2>
+            <p>Completed six semesters of intensive coursework in information technology, focusing on software development, database management, and network security.</p>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="projects.html" class="btn">See My Projects</a>
+    </div>
+</body>
+</html>
