@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Intro - My Portfolio</title>
+    <!-- Add Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         html {
             height: 100%;
@@ -64,6 +66,25 @@
             margin-bottom: 30px;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
         }
+        /* Footer styles */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons a {
+            color: #00ffff;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            color: #ff00ff;
+        }
     </style>
     <link rel="stylesheet" href="anim.css">
 </head>
@@ -77,6 +98,15 @@
         <h1>SIDDHESH KSHIRSAGAR</h1>
         <p>Freshly minted BScIT grad. Fluent in Marathi, Hindi, and English. Passionate about game development, AI, and web technologies.</p>
         <a href="education.html" class="btn">Explore My Education</a>
+    </div>
+    <!-- Add the footer with social media links -->
+    <div class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/siddhesh.kshirsagar.315" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/siddhesh_kshirsagar.315" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/siddhesh-kshirsagar-59b97b257/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Siddhesh204" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+        </div>
     </div>
 </body>
 </html>

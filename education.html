@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education - My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         html {
             height: 100%;
@@ -83,12 +84,19 @@
         .event {
             position: relative;
             width: 45%;
+            margin: 20px 0;
+            transition: width 0.3s ease-in-out, transform 0.3s ease-in-out, left 0.3s ease-in-out, margin 0.3s ease-in-out;
+        }
+        .event-link-block {
+            display: block;
             padding: 20px;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
-            transition: width 0.3s ease-in-out, transform 0.3s ease-in-out, left 0.3s ease-in-out, margin 0.3s ease-in-out;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            transition: width 0.3s ease-in-out;
         }
         .event:nth-child(odd) {
             left: 0;
@@ -99,14 +107,14 @@
             margin-left: 0;
         }
         .event:hover {
-            width: 50%;
-            transform: scale(1.1);
+            width: 55%;
+            transform: none;
         }
         .event:nth-child(odd):hover {
-            margin-right: 50%;
+            margin-right: 45%;
         }
         .event:nth-child(even):hover {
-            left: 50%;
+            left: 45%;
         }
         .event::after {
             content: '';
@@ -136,14 +144,14 @@
             left: -20px;
             transform: scale(0.91) rotate(180deg);
         }
-        .event h2 {
+        .event-link-block h2 {
             font-family: 'Press Start 2P', cursive;
             font-size: 1.2em;
             color: #32ec0d;
             margin-bottom: 10px;
             opacity: 1;
         }
-        .event p {
+        .event-link-block p {
             font-size: 1em;
             color: #b5e03e;
             opacity: 1;
@@ -152,11 +160,28 @@
             text-align: center;
             padding: 40px 20px;
         }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons a {
+            color: #00ffff;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            color: #ff00ff;
+        }
     </style>
     <link rel="stylesheet" href="anim.css">
 </head>
 <body>
-    <!-- Sitting cat sprite -->
     <div class="sprite-container cat-sitting-container">
         <div class="cat-sitting-sprite"></div>
     </div>
@@ -166,24 +191,62 @@
     </div>
     <div class="timeline">
         <div class="event">
-            <h2>High School - [School Name] (2019)</h2>
-            <p>Completed my secondary education with a focus on science and mathematics, preparing for a future in technology.</p>
+            <a class="event-link-block" href="//www.ies.edu/vnsule/" target="_blank">
+                <h2>High School - IES VN Sule English Medium High School (2019)</h2>
+                <p>At IES VN Sule English Medium High School, I completed my 10th/SSC, performing well in science and math. I’ve been passionate about tech since my SSC days, diving into it through school studies. I also built an online presence by joining tech-related discussions on forums. This helped me improve my communication and critical thinking skills through interactions. These years laid a strong foundation for my future in commerce and IT.</p>
+            </a>
         </div>
         <div class="event">
-            <h2>Started BScIT - [University Name] (2022)</h2>
-            <p>Began my Bachelor's degree in Information Technology, diving into programming, web development, and AI concepts.</p>
+            <a class="event-link-block" href="#">
+                <h2>Siddharth College of Commerce (HSC)</h2>
+                <p>At Siddharth College of Commerce, I completed my HSC, focusing on commerce and economics. I continued exploring my interest in tech, applying it to commerce concepts during my studies. I grew my online presence by engaging in discussions on business and tech platforms. This improved my communication and critical thinking skills as I shared ideas. This phase prepared me for my IT-focused bachelor’s degree.</p>
+            </a>
         </div>
         <div class="event">
-            <h2>Diploma in IT - [Institute Name] (2022)</h2>
-            <p>Studied foundational IT concepts, including programming, web development, and database systems, laying the groundwork for my BScIT.</p>
-        </div>
-        <div class="event">
-            <h2>BScIT - [University Name] (2025)</h2>
-            <p>Completed six semesters of intensive coursework in information technology, focusing on software development, database management, and network security.</p>
+            <a class="event-link-block" href="#">
+                <h2>Bachelors in IT - Guru Nanak College of Arts, Science, and Commerce (2022)</h2>
+                <p>At Guru Nanak College, I earned my BScIT, focusing on programming, software development, and AI. My passion for tech deepened as I worked on practical IT projects. I expanded my online presence by joining IT communities and discussing tech trends. This sharpened my communication and critical thinking skills through active engagement. I’m now ready to pursue a career in the tech industry.</p>
+            </a>
         </div>
     </div>
     <div class="button-container">
         <a href="projects.html" class="btn">See My Projects</a>
     </div>
+    <!-- Add the footer with social media links -->
+    <div class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/siddhesh.kshirsagar.315" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/siddhesh_kshirsagar.315" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/siddhesh-kshirsagar-59b97b257/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Siddhesh204" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const WORD_LIMIT = 20;
+
+            document.querySelectorAll('.event-link-block p').forEach(pElement => {
+                const originalText = pElement.textContent.trim();
+                const words = originalText.split(/\s+/);
+
+                if (words.length > WORD_LIMIT) {
+                    const shortText = words.slice(0, WORD_LIMIT).join(" ") + "...";
+                    const fullText = originalText;
+
+                    pElement.setAttribute('data-fulltext', fullText);
+                    pElement.setAttribute('data-shorttext', shortText);
+                    pElement.textContent = shortText;
+
+                    const parentEvent = pElement.closest('.event');
+                    parentEvent.addEventListener('mouseenter', function() {
+                        pElement.textContent = pElement.getAttribute('data-fulltext');
+                    });
+                    parentEvent.addEventListener('mouseleave', function() {
+                        pElement.textContent = pElement.getAttribute('data-shorttext');
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

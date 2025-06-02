@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet">
+    <!-- Add Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         html {
             height: 100%;
@@ -32,10 +34,10 @@
             z-index: 1;
         }
         h1 {
-            font-size: 2em;
+            font-size : 2em;
             line-height: 1.2;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(2, 19, 22, 0.7);
+            text-shadow: 2px 2px 4px rgba(2, 19, 22, 0 watermark.7);
             color: #00ffff;
         }
         p {
@@ -125,6 +127,25 @@
         .btn:hover {
             background: #00ffff;
         }
+        /* Footer styles */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons a {
+            color: #00ffff;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            color: #ff00ff;
+        }
     </style>
     <link rel="stylesheet" href="anim.css">
 </head>
@@ -144,9 +165,9 @@
             <div class="additional-info">Technologies: Unity, C#, Aseprite for pixel art.</div>
         </a>
         <a href="project2.html" class="project-card">
-            <h3>AI Chatbot</h3>
-            <p>A simple AI chatbot using Python and NLP libraries to assist users with basic queries.</p>
-            <div class="additional-info">Technologies: Python, NLTK, Flask for web integration.</div>
+            <h3>Sticky Notes Organizer</h3>
+            <p>A web-based sticky notes app built with Django, designed for organizing tasks with ease. Includes intelligent sorting options to streamline productivity.</p>
+            <div class="additional-info">Technologies: Django (Python), HTML/CSS, JavaScript, SQLite</div>
         </a>
         <a href="intro.html" class="project-card">
             <h3>Retro Portfolio</h3>
@@ -157,6 +178,15 @@
     <div class="button-container">
         <a href="intro.html" class="btn">Back to Home</a>
         <a href="education.html" class="btn">See My Education</a>
+    </div>
+    <!-- Add the footer with social media links -->
+    <div class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/siddhesh.kshirsagar.315" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/siddhesh_kshirsagar.315" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/siddhesh-kshirsagar-59b97b257/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Siddhesh204" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+        </div>
     </div>
 </body>
 </html>
